@@ -2,13 +2,13 @@
 def run_guessing_game
   number = rand(5) + 1
   puts "Guess the number"
-  input = gets.chomp.to_s
+  input = gets.chomp
 
   if number == input.to_s
     puts "You guessed the correct number!"
   elsif input == "exit"
     puts "Goodbye!"
-  else
+  elsif number != input.to_s
     puts "Sorry! The computer guessed #{number}."
   end
 end

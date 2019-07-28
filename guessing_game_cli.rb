@@ -4,11 +4,11 @@ def run_guessing_game
   puts "Guess the number"
   input = gets.chomp
 
-  if number == input.to_s
+  if number == input.to_i
     puts "You guessed the correct number!"
   elsif input == "exit"
     puts "Goodbye!"
-  elsif number != input.to_s
+  elsif number != input.to_i
     puts "Sorry! The computer guessed #{number}."
   end
 end

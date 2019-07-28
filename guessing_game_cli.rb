@@ -2,7 +2,7 @@
 def run_guessing_game
   number = rand(5) + 1
   puts "Guess the number"
-  input = gets.chomp
+  input = gets.chomp.to_s
 
   if number == input.to_s
     puts "You guessed the correct number!"
@@ -10,7 +10,5 @@ def run_guessing_game
     puts "Goodbye!"
   else
     puts "Sorry! The computer guessed #{number}."
-    puts number
-    puts input
   end
 end
